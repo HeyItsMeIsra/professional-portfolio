@@ -1,57 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Isra | CPA & Aspiring Software Engineer</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isra | CPA → Aspiring Software Engineer</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Isra — CPA with 9 years in tax, moving into software engineering. Building FinTech tools: tax calculators, dashboards, client portals." />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- Social Preview -->
+  <meta property="og:title" content="Isra | CPA → Aspiring Software Engineer" />
+  <meta property="og:description" content="CPA with 9 years of tax experience, now building web apps that simplify compliance and reporting." />
+  <meta property="og:type" content="website" />
+  <!-- Replace with your deployed image URL -->
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Canonical + Favicon (replace the domain when deployed) -->
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Isra",
+    "jobTitle": "CPA / Aspiring Software Engineer",
+    "url": "https://yourdomain.com/",
+    "sameAs": [
+      "https://github.com/HeyItsMeIsra",
+      "https://www.linkedin.com/in/israelvilla/"
+    ]
+  }
+  </script>
 </head>
 <body>
-	<header>
-		<h1>Hi, I'm Isra</h1>
-		<p>Certified Public Accountant (CPA) | Aspiring Software Engineer</p>
-	</header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-	<section id="about">
-		<h2>About me</h2>
-		<p>
-			I’m a Certified Public Accountant (CPA) with 9 years of experience in tax compliance, 
-      corporate and deferred tax reporting, and financial advisory across industries including telecommunications, finance, oil & gas, healthcare, real estate, and logistics.
-		</p>
-		<p>
-		 Currently, I’m expanding my skill set into software development — learning Git, HTML, CSS, 
-      and JavaScript through a professional coding bootcamp.	
-		</p>
-		<p>
-		My goal is to combine my finance and tax background with technology to develop FinTech 
-      solutions that simplify compliance, reporting, and data-driven decision-making.	
-		</p>
-	</section>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#">Isra</a>
+        <ul class="nav-list" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-	<section id="projects">
-		<h2>Projects in Progress</h2>
-		<ul>
-			<li><strong>Simple tax calculator</strong>– Built with HTML, CSS, and JavaScript to calculate basic taxes and display results dynamically.</li>
-			<li><strong>Financial Dashboard</strong>– A data visualization project using API integration to show financial metrics.</li>
-			<li><strong>Client Portal Prototype</strong>– A concept platform for tax professionals to manage client data and reporting securely.</li>
-		</ul>
-	</section>
+      <section class="hero" aria-labelledby="intro-title">
+        <h1 id="intro-title">Hi, I’m Isra — CPA pivoting into Software Engineering</h1>
+        <p class="sub">
+          9 years in tax compliance & reporting. Now building web tools that make
+          <strong>compliance simpler</strong>, <strong>reporting clearer</strong>, and
+          <strong>decisions faster</strong>.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- Optional: add a hosted PDF later -->
+          <!-- <a class="btn" href="/Isra-Resume.pdf" download>Download Résumé</a> -->
+        </div>
+      </section>
+    </div>
+  </header>
 
-	<section id="goals">
-		<h2>Professional Goal</h2>
-		<p>
-		 I’m passionate about bridging finance and technology to make financial systems more efficient, automated, and accessible.
-		</p>
-	</section>
+  <main id="main">
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I’m a <strong>Certified Public Accountant (CPA)</strong> with
+            <strong>9 years</strong> in tax compliance, corporate and deferred tax reporting,
+            and financial advisory across telecommunications, finance, oil &amp; gas, healthcare,
+            real estate, and logistics.
+          </p>
+          <p>
+            I’m currently in a professional coding bootcamp, learning <strong>Git, HTML, CSS,
+            and JavaScript</strong>. My goal is to combine deep finance &amp; tax knowledge with
+            modern software practices to build <strong>FinTech solutions</strong> that reduce
+            manual work and improve decision-making.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="card">
+            <h3>What I’m Building</h3>
+            <ul>
+              <li>Tax calculator with clear bracket breakdown</li>
+              <li>Financial KPI dashboard (AR, AP, cashflow)</li>
+              <li>Client portal prototype (secure document intake)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What I Bring</h3>
+            <ul>
+              <li>Accuracy under deadlines</li>
+              <li>Data-driven mindset</li>
+              <li>Clear communication with stakeholders</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<footer>
-		<p>Connect with me on
-			<a href="https://github.com/HeyItsMeIsra" target="_blank">GitHub</a>
-			<a href="https://www.linkedin.com/in/israelvilla/" target="_blank">LinkedIn</a>
-		</p>
-	</footer>
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="tags" role="list">
+          <span class="tag" role="listitem">HTML5</span>
+          <span class="tag" role="listitem">CSS3</span>
+          <span class="tag" role="listitem">JavaScript (in progress)</span>
+          <span class="tag" role="listitem">Git &amp; GitHub</span>
+          <span class="tag" role="listitem">Financial Reporting</span>
+          <span class="tag" role="listitem">Tax Compliance</span>
+          <span class="tag" role="listitem">Data Analysis</span>
+        </div>
+        <p class="hint">Currently focused on HTML → CSS → JavaScript. Next up: Node.js &amp; databases.</p>
+      </div>
+    </section>
 
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects in Progress</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Simple Tax Calculator</h3>
+            <p>HTML/CSS/JS app to calculate estimated tax with bracket-by-bracket explanations and effective rate.</p>
+            <ul class="bullets">
+              <li>Input: filing status, income, dependents</li>
+              <li>Output: tax owed, effective rate, bracket breakdown</li>
+              <li>Stretch: save scenarios to compare</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn small" href="#" aria-disabled="true">Live soon</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">View repo</a>
+            </div>
+          </article>
 
+          <article class="card">
+            <h3>Financial Dashboard</h3>
+            <p>Prototype dashboard showing core metrics (revenue trend, expense ratio, cash position) with mock data.</p>
+            <ul class="bullets">
+              <li>Charts &amp; filters (later with APIs)</li>
+              <li>Clean layout → exec-friendly</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn small" href="#" aria-disabled="true">Live soon</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">View repo</a>
+            </div>
+          </article>
 
+          <article class="card">
+            <h3>Client Portal Prototype</h3>
+            <p>Concept UI for secure document intake, status tracking, and messaging for tax engagements.</p>
+            <ul class="bullets">
+              <li>Intake checklist</li>
+              <li>Status timeline</li>
+              <li>Role-based access (future)</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn small" href="#" aria-disabled="true">Live soon</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">View repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience Highlights</h2>
+        <ul class="timeline">
+          <li>
+            <strong>CPA — Corporate &amp; Deferred Tax Reporting</strong>
+            <span class="muted">2016–2025 · multi-industry</span>
+            <p>Owned compliance cycles, reduced errors through checklist systems, and partnered with finance/ops.</p>
+          </li>
+          <li>
+            <strong>Analytics &amp; Advisory</strong>
+            <p>Built repeatable workflows for reconciliations, variance analysis, and quarter-end close support.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Best way to reach me: <a href="mailto:isra@email.com">isra@email.com</a></p>
+        <ul class="links" role="list">
+          <li><a href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      © <span id="year"></span> Isra. CPA who speaks API.
+    </div>
+  </footer>
+
+  <script>
+    // Small nicety: current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
