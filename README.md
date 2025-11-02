@@ -44,5 +44,5 @@ You can view it here:
 ## 👤 Author
 
 **Isra**  
-- GitHub: https://github.com/HeyItsMesIra  
+- GitHub: https://github.com/HeyItsMeIsra
 - LinkedIn: https://www.linkedin.com/in/israelvilla/  
