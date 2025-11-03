@@ -1,48 +1,64 @@
 # 🌐 Professional Portfolio
 
 This is my personal portfolio website where I showcase my background, skills, and projects.  
-I built it using **HTML, CSS**, and I will add **JavaScript** as I continue learning.
+It is built using **HTML and CSS**, and I will be adding **JavaScript** as I continue learning.
 
 ---
 
 ## 🔗 Live Website
 
-You can view it here:  
-👉 https://heyitsmeisra.github.io/professional-portfolio/
+✅ You can view it here:  
+**https://heyitsmeisra.github.io/professional-portfolio/**
 
 ---
 
 ## 💡 Features
 
-- Hero section with introduction  
-- About Me section (CPA transitioning to Software Engineering)  
-- Skills section  
-- Projects in progress  
-- Experience timeline  
-- Contact information  
+- 🎯 Hero section with introduction  
+- 👩‍💻 About Me (CPA transitioning to Software Engineering)  
+- ⚙️ Skills section  
+- 🚀 Projects in progress  
+- 📊 Experience timeline  
+- 📬 Contact information  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML5  
-- CSS3  
-- Git & GitHub  
-- GitHub Pages (for hosting)
+| Technology  | Purpose |
+|-------------|---------|
+| HTML5       | Structure of the webpage |
+| CSS3        | Styling and layout |
+| Git & GitHub | Version control and collaboration |
+| GitHub Pages | Hosting the website live |
+
+---
+
+## 📁 Projects Included
+
+| Project | Description | Live | Repository |
+|---------|-------------|------|------------|
+| Tax Form (HTML Only) | Simple tax form using semantic HTML | ✅ https://heyitsmeisra.github.io/tax-form/ | https://github.com/HeyItsMeIsra/tax-form |
+| Professional Portfolio | This website | ✅ | https://github.com/HeyItsMeIsra/professional-portfolio |
 
 ---
 
 ## 📌 Future Improvements
 
-- Add JavaScript for interactivity  
-- Add contact form  
-- Make it mobile-responsive (if not fully done)  
-- Add more portfolio projects  
+- ✨ Add JavaScript for interactivity  
+- 📱 Make it fully responsive on mobile  
+- 📧 Add a working contact form  
+- 🧾 Add more projects (Tax Calculator, Dashboard, Client Portal)  
+- 🌙 Add dark/light mode toggle  
 
 ---
 
 ## 👤 Author
 
 **Isra**  
-- GitHub: https://github.com/HeyItsMeIsra
-- LinkedIn: https://www.linkedin.com/in/israelvilla/  
+- 💻 GitHub: https://github.com/HeyItsMeIsra  
+- 💼 LinkedIn: https://www.linkedin.com/in/israelvilla/
+
+---
+
+🌟 *Thank you for visiting my portfolio! Feel free to connect or send feedback.*  

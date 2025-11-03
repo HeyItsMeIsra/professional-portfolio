@@ -58,14 +58,14 @@
       <section class="hero" aria-labelledby="intro-title">
         <h1 id="intro-title">Hi, I’m Isra — CPA pivoting into Software Engineering</h1>
         <p class="sub">
-          9 years in tax compliance & reporting. Now building web tools that make
+          9 years in tax compliance &amp; reporting. Now building web tools that make
           <strong>compliance simpler</strong>, <strong>reporting clearer</strong>, and
           <strong>decisions faster</strong>.
         </p>
         <div class="cta-row">
           <a class="btn primary" href="#projects">See Projects</a>
-          <a class="btn" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <!-- Optional: add a hosted PDF later -->
           <!-- <a class="btn" href="/Isra-Resume.pdf" download>Download Résumé</a> -->
         </div>
@@ -95,8 +95,9 @@
           <div class="card">
             <h3>What I’m Building</h3>
             <ul>
+              <li>Tax Form <small>(HTML-only MVP)</small></li>
               <li>Tax calculator with clear bracket breakdown</li>
-              <li>Financial KPI dashboard (AR, AP, cashflow)</li>
+              <li>Financial KPI dashboard (AR, AP, cash flow)</li>
               <li>Client portal prototype (secure document intake)</li>
             </ul>
           </div>
@@ -131,7 +132,24 @@
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects in Progress</h2>
+
         <div class="cards">
+          <!-- Tax Form card (fixed markup + correct links) -->
+          <article class="card">
+            <h3>Simple Tax Form (HTML Only)</h3>
+            <p>Basic HTML-only tax form to collect <em>taxpayer</em> information, income, filing status, and consent. Semantic and accessible.</p>
+            <ul class="bullets">
+              <li>Semantic HTML: labels, fieldsets, inputs</li>
+              <li>Inputs for name, birth date, income, gender, filing status</li>
+              <li>Deployed with GitHub Pages</li>
+            </ul>
+            <div class="card-cta">
+              <a class="btn small" href="https://heyitsmeisra.github.io/tax-form/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra/tax-form" target="_blank" rel="noopener noreferrer">View Repo</a>
+            </div>
+          </article>
+
+          <!-- Calculator -->
           <article class="card">
             <h3>Simple Tax Calculator</h3>
             <p>HTML/CSS/JS app to calculate estimated tax with bracket-by-bracket explanations and effective rate.</p>
@@ -142,10 +160,11 @@
             </ul>
             <div class="card-cta">
               <a class="btn small" href="#" aria-disabled="true">Live soon</a>
-              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">View repo</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">View Repo</a>
             </div>
           </article>
 
+          <!-- Dashboard -->
           <article class="card">
             <h3>Financial Dashboard</h3>
             <p>Prototype dashboard showing core metrics (revenue trend, expense ratio, cash position) with mock data.</p>
@@ -155,10 +174,11 @@
             </ul>
             <div class="card-cta">
               <a class="btn small" href="#" aria-disabled="true">Live soon</a>
-              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">View repo</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">View Repo</a>
             </div>
           </article>
 
+          <!-- Client portal -->
           <article class="card">
             <h3>Client Portal Prototype</h3>
             <p>Concept UI for secure document intake, status tracking, and messaging for tax engagements.</p>
@@ -169,7 +189,7 @@
             </ul>
             <div class="card-cta">
               <a class="btn small" href="#" aria-disabled="true">Live soon</a>
-              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">View repo</a>
+              <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">View Repo</a>
             </div>
           </article>
         </div>
@@ -198,8 +218,8 @@
         <h2>Contact</h2>
         <p>Best way to reach me: <a href="mailto:israelvilla2015cpa@gmail.com">israelvilla2015cpa@gmail.com</a></p>
         <ul class="links" role="list">
-          <li><a href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </div>
     </section>
