@@ -10,8 +10,8 @@ It highlights my background, projects, and skills while documenting my transitio
 🔴 **Live Website:**  
 https://heyitsmeisra.github.io/professional-portfolio/
 
-📹 **My Journey Video — CPA to Software Engineer** *(optional to include after upload)*  
-https://www.youtube.com/watch?v=YOUR_VIDEO_ID
+📹 **My Journey Video — CPA to Software Engineer*
+
 
 ---
 
