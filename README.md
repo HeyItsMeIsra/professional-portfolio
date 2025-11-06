@@ -1,64 +1,82 @@
-# 🌐 Professional Portfolio
+# 🌐 Professional Portfolio — Isra Villa
 
-This is my personal portfolio website where I showcase my background, skills, and projects.  
-It is built using **HTML and CSS**, and I will be adding **JavaScript** as I continue learning.
-
----
-
-## 🔗 Live Website
-
-✅ You can view it here:  
-**https://heyitsmeisra.github.io/professional-portfolio/**
+This is my personal portfolio website where I showcase my journey from **Certified Public Accountant (CPA)** to **Aspiring Software Engineer**.  
+It highlights my background, projects, and skills while documenting my transition into tech.
 
 ---
 
-## 💡 Features
+## 🔗 Live Portfolio
 
-- 🎯 Hero section with introduction  
-- 👩‍💻 About Me (CPA transitioning to Software Engineering)  
-- ⚙️ Skills section  
-- 🚀 Projects in progress  
-- 📊 Experience timeline  
-- 📬 Contact information  
+🔴 **Live Website:**  
+https://heyitsmeisra.github.io/professional-portfolio/
 
----
-
-## 🛠️ Technologies Used
-
-| Technology  | Purpose |
-|-------------|---------|
-| HTML5       | Structure of the webpage |
-| CSS3        | Styling and layout |
-| Git & GitHub | Version control and collaboration |
-| GitHub Pages | Hosting the website live |
+📹 **My Journey Video — CPA to Software Engineer** *(optional to include after upload)*  
+https://www.youtube.com/watch?v=YOUR_VIDEO_ID
 
 ---
 
-## 📁 Projects Included
+## 💡 What This Portfolio Includes
 
-| Project | Description | Live | Repository |
-|---------|-------------|------|------------|
+✔️ Hero section with a personal intro  
+✔️ About Me — 9-year Tax Professional → learning to code  
+✔️ Skills section (Finance + Tech)  
+✔️ Projects (live + in progress)  
+✔️ Experience timeline  
+✔️ Contact + social links  
+✔️ Embedded YouTube video section (once uploaded)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology     | Purpose                      |
+|----------------|-------------------------------|
+| HTML5          | Page structure                |
+| CSS3           | Styling and responsive layout |
+| Git & GitHub   | Version control               |
+| GitHub Pages   | Hosting                       |
+
+---
+
+## 🚀 Projects
+
+| Project | Description | Live Demo | Repository |
+|---------|-------------|-----------|------------|
 | Tax Form (HTML Only) | Simple tax form using semantic HTML | ✅ https://heyitsmeisra.github.io/tax-form/ | https://github.com/HeyItsMeIsra/tax-form |
 | Professional Portfolio | This website | ✅ | https://github.com/HeyItsMeIsra/professional-portfolio |
 
 ---
 
-## 📌 Future Improvements
+## 🎯 Planned Improvements
 
-- ✨ Add JavaScript for interactivity  
-- 📱 Make it fully responsive on mobile  
+- ✅ Add YouTube video section to portfolio  
+- ✨ Add JavaScript for form validation & interactivity  
+- 📱 Improve mobile responsiveness  
 - 📧 Add a working contact form  
-- 🧾 Add more projects (Tax Calculator, Dashboard, Client Portal)  
-- 🌙 Add dark/light mode toggle  
+- 📊 Build tax calculator, dashboard, and client portal prototypes  
+- 🌙 Optional: Light/Dark mode toggle
+
+---
+
+## 📹 YouTube + Visibility (optional section after upload)
+
+I’m also creating content to document my journey into tech for visibility and accountability.
+
+**Video idea:**  
+“From CPA to Software Engineering — Why I Started Learning to Code After 9 Years in Tax”
+
+Once uploaded, the video will be embedded on my portfolio and linked here.
 
 ---
 
 ## 👤 Author
 
-**Isra**  
+**Isra Villa**  
+📍 CPA | Aspiring Software Engineer  
 - 💻 GitHub: https://github.com/HeyItsMeIsra  
-- 💼 LinkedIn: https://www.linkedin.com/in/israelvilla/
+- 💼 LinkedIn: https://www.linkedin.com/in/israelvilla/  
+- 🌐 Portfolio: https://heyitsmeisra.github.io/professional-portfolio/
 
 ---
 
-🌟 *Thank you for visiting my portfolio! Feel free to connect or send feedback.*  
+⭐ *Thank you for visiting! Feedback and collaboration are always welcome.*  
