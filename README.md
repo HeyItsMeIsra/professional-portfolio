@@ -79,4 +79,8 @@ Once uploaded, the video will be embedded on my portfolio and linked here.
 
 ---
 
+<<<<<<< HEAD
 ⭐ *Thank you for visiting! Feedback and collaboration are always welcome.*  
+=======
+⭐ *Thank you for visiting! Feedback and collaboration are always welcome.*  
+>>>>>>> ac4db6ceffa697153c5d54721c969be367a5f555
