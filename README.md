@@ -1,86 +1,49 @@
-# 🌐 Professional Portfolio — Isra Villa
+# 🌐 Professional Portfolio — Israel Q. Villa Jr.
 
-This is my personal portfolio website where I showcase my journey from **Certified Public Accountant (CPA)** to **Aspiring Software Engineer**.  
-It highlights my background, projects, and skills while documenting my transition into tech.
+Welcome to my personal portfolio — a space where I share my journey from **Certified Public Accountant (CPA)** to **Software Engineering**.
 
----
-
-## 🔗 Live Portfolio
-
-🔴 **Live Website:**  
-https://heyitsmeisra.github.io/professional-portfolio/
-
-📹 **My Journey Video — CPA to Software Engineer*
-
+After nearly a decade in corporate tax and financial reporting across the Philippines, Qatar, Australia, and the U.S., I began learning how technology can make compliance and data workflows more efficient.  
+This portfolio highlights my background, projects, and continuous learning as I build tools that bridge **finance and technology**.
 
 ---
 
-## 💡 What This Portfolio Includes
+## 🔴 Live Portfolio  
+**🌍 Live Website:** [https://heyitsmeisra.github.io/professional-portfolio/](https://heyitsmeisra.github.io/professional-portfolio/)
 
-✔️ Hero section with a personal intro  
-✔️ About Me — 9-year Tax Professional → learning to code  
-✔️ Skills section (Finance + Tech)  
-✔️ Projects (live + in progress)  
-✔️ Experience timeline  
-✔️ Contact + social links  
-✔️ Embedded YouTube video section (once uploaded)
+🎥 **Watch My Story:**  
+[![Watch on YouTube](https://img.youtube.com/vi/vBrprhUfYvI/0.jpg)](https://www.youtube.com/watch?v=vBrprhUfYvI)
+
+> *A 2.5-minute video sharing how I balance full-time work in tax while studying software engineering, and how I’m combining both worlds.*
 
 ---
 
-## 🛠️ Tech Stack
-
-| Technology     | Purpose                      |
-|----------------|-------------------------------|
-| HTML5          | Page structure                |
-| CSS3           | Styling and responsive layout |
-| Git & GitHub   | Version control               |
-| GitHub Pages   | Hosting                       |
-
----
-
-## 🚀 Projects
-
-| Project | Description | Live Demo | Repository |
-|---------|-------------|-----------|------------|
-| Tax Form (HTML Only) | Simple tax form using semantic HTML | ✅ https://heyitsmeisra.github.io/tax-form/ | https://github.com/HeyItsMeIsra/tax-form |
-| Professional Portfolio | This website | ✅ | https://github.com/HeyItsMeIsra/professional-portfolio |
+## 💡 What You’ll Find Here  
+- Hero section with a personal introduction  
+- About Me — 9 years of corporate tax experience → learning to code  
+- Skills section (Finance 💼 + Tech 💻)  
+- Projects — live & in progress  
+- Experience timeline  
+- Contact + social links  
+- Embedded YouTube video  
 
 ---
 
-## 🎯 Planned Improvements
+## 🧩 Tech Stack
 
-- ✅ Add YouTube video section to portfolio  
-- ✨ Add JavaScript for form validation & interactivity  
-- 📱 Improve mobile responsiveness  
-- 📧 Add a working contact form  
-- 📊 Build tax calculator, dashboard, and client portal prototypes  
-- 🌙 Optional: Light/Dark mode toggle
-
----
-
-## 📹 YouTube + Visibility (optional section after upload)
-
-I’m also creating content to document my journey into tech for visibility and accountability.
-
-**Video idea:**  
-“From CPA to Software Engineering — Why I Started Learning to Code After 9 Years in Tax”
-
-Once uploaded, the video will be embedded on my portfolio and linked here.
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5**    | Page structure and content |
+| **CSS3**     | Styling and responsive layout |
+| **Git & GitHub** | Version control and deployment |
+| **JavaScript** | Adding interactivity (in progress) |
 
 ---
 
-## 👤 Author
+## ✉️ Connect
 
-**Isra Villa**  
-📍 CPA | Aspiring Software Engineer  
-- 💻 GitHub: https://github.com/HeyItsMeIsra  
-- 💼 LinkedIn: https://www.linkedin.com/in/israelvilla/  
-- 🌐 Portfolio: https://heyitsmeisra.github.io/professional-portfolio/
+📫 **LinkedIn:** [https://www.linkedin.com/in/israelvilla](https://www.linkedin.com/in/israelvilla)  
+💻 **GitHub:** [https://github.com/HeyItsMeIsra](https://github.com/HeyItsMeIsra)  
 
 ---
 
-<<<<<<< HEAD
-⭐ *Thank you for visiting! Feedback and collaboration are always welcome.*  
-=======
-⭐ *Thank you for visiting! Feedback and collaboration are always welcome.*  
->>>>>>> ac4db6ceffa697153c5d54721c969be367a5f555
+⭐ *Thanks for visiting my portfolio! Feel free to connect or share feedback as I continue learning and building.*  
