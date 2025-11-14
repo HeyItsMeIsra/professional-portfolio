@@ -1,108 +1,493 @@
+/* =========================================
+   DESIGN TOKENS / THEME VARIABLES
+   Define colors, shadows, borders, etc.
+   You can reuse these with var(--name)
+   ========================================= */
 :root{
-  --bg:#0b0d12; --bg-alt:#11151c; --card:#151a22;
-  --text:#e8eef6; --muted:#b6c2d1;
-  --brand:#66e3ff; --brand-2:#8a7dff;
-  --ring:rgba(102,227,255,.5);
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-  --border:1px solid rgba(255,255,255,.06);
+  --bg:#0b0d12;       /* main page background (dark mode) */
+  --bg-alt:#11151c;   /* alternate section background */
+  --card:#151a22;     /* card background color */
+
+  --text:#e8eef6;     /* main text color */
+  --muted:#b6c2d1;    /* subtle text (hints, secondary text) */
+
+  --brand:#66e3ff;    /* primary accent color */
+  --brand-2:#8a7dff;  /* secondary accent color (for gradients) */
+
+  --ring:rgba(102,227,255,.5);             /* focus outline color */
+  --shadow:0 10px 30px rgba(0,0,0,.35);    /* default box shadow */
+  --border:1px solid rgba(255,255,255,.06);/* subtle border for dark mode */
 }
+
+/* Light mode theme: override the variables when user prefers light theme */
 @media (prefers-color-scheme: light){
   :root{
-    --bg:#f7fafc; --bg-alt:#fff; --card:#fff;
-    --text:#0b1321; --muted:#4a5568;
-    --brand:#006d77; --brand-2:#7b61ff;
-    --ring:rgba(0,109,119,.25);
-    --shadow:0 8px 24px rgba(2,8,23,.08);
-    --border:1px solid rgba(2,8,23,.08);
+    --bg:#f7fafc;       /* light background */
+    --bg-alt:#fff;      /* alt section background */
+    --card:#fff;        /* cards on light mode */
+
+    --text:#0b1321;     /* dark text */
+    --muted:#4a5568;    /* muted dark text */
+
+    --brand:#006d77;    /* brand color in light mode */
+    --brand-2:#7b61ff;  /* secondary accent in light mode */
+
+    --ring:rgba(0,109,119,.25);            /* focus ring color */
+    --shadow:0 8px 24px rgba(2,8,23,.08);  /* softer shadow on light bg */
+    --border:1px solid rgba(2,8,23,.08);   /* border for light mode */
   }
 }
+
+/* =========================================
+   GLOBAL RESETS / BASE STYLES
+   ========================================= */
+
+/* Make box sizing more intuitive:
+   width/height include padding + border */
 *{box-sizing:border-box}
+
+/* Ensure html and body fill the viewport height */
 html,body{height:100%}
+
+/* Base body styles: typography and background */
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
-  background:var(--bg); color:var(--text); line-height:1.6;
-  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  /* Smoother font rendering */
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
-a{color:var(--brand);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{width:min(1100px,92%);margin-inline:auto}
 
-/* Skip link */
-.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-.skip-link:focus{position:static;width:auto;height:auto;padding:.5rem 1rem;background:var(--brand);color:#001018;border-radius:.5rem}
+/* Default link styling */
+a{
+  color:var(--brand);
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
 
-/* Header/Nav */
-.site-header{position:sticky;top:0;background:rgba(11,13,18,.7);backdrop-filter:blur(8px);border-bottom:var(--border);z-index:50}
-@media (prefers-color-scheme: light){.site-header{background:rgba(255,255,255,.75)}}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-.brand{font-weight:700;letter-spacing:.2px}
-.nav-list{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
-.nav-list a{padding:.5rem .75rem;border-radius:.6rem}
-.nav-list a:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
-.menu-btn{display:none}
+/* Page content container: max width + centered */
+.container{
+  width:min(1100px,92%);    /* up to 1100px, otherwise 92% of viewport */
+  margin-inline:auto;
+}
+
+/* =========================================
+   SKIP LINK (ACCESSIBILITY)
+   Allows keyboard users to skip navigation
+   ========================================= */
+.skip-link{
+  position:absolute;
+  left:-999px;   /* hide off-screen by default */
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* When focused, show the skip link like a normal button */
+.skip-link:focus{
+  position:static;
+  width:auto;
+  height:auto;
+  padding:.5rem 1rem;
+  background:var(--brand);
+  color:#001018;
+  border-radius:.5rem;
+}
+
+/* =========================================
+   HEADER & NAVIGATION
+   ========================================= */
+
+/* Sticky header at top with blurred background */
+.site-header{
+  position:sticky;
+  top:0;
+  background:rgba(11,13,18,.7);   /* semi-transparent dark */
+  backdrop-filter:blur(8px);      /* glassmorphism effect */
+  border-bottom:var(--border);
+  z-index:50;                     /* keep above content */
+}
+
+/* Adjust header background in light mode */
+@media (prefers-color-scheme: light){
+  .site-header{
+    background:rgba(255,255,255,.75);
+  }
+}
+
+/* Main nav bar layout */
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 0;
+}
+
+/* Brand / name styling */
+.brand{
+  font-weight:700;
+  letter-spacing:.2px;
+}
+
+/* Horizontal nav list for desktop */
+.nav-list{
+  display:flex;
+  gap:1rem;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+/* Nav link styling */
+.nav-list a{
+  padding:.5rem .75rem;
+  border-radius:.6rem;
+}
+
+/* Keyboard focus styling for nav links */
+.nav-list a:focus-visible{
+  outline:2px solid var(--brand);
+  outline-offset:3px;
+}
+
+/* Mobile menu button is hidden by default (desktop) */
+.menu-btn{
+  display:none;
+}
+
+/* Responsive nav: show hamburger on small screens */
 @media (max-width:780px){
-  .menu-btn{display:inline-flex;align-items:center;gap:.5rem;border:var(--border);padding:.45rem .7rem;border-radius:.6rem;background:transparent;color:var(--text)}
-  .nav-list{display:none}
-  .nav.open .nav-list{display:flex;position:absolute;left:0;right:0;top:60px;flex-direction:column;background:var(--bg-alt);padding:1rem;border-bottom:var(--border)}
+  .menu-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    border:var(--border);
+    padding:.45rem .7rem;
+    border-radius:.6rem;
+    background:transparent;
+    color:var(--text);
+  }
+
+  /* Hide nav links by default on mobile */
+  .nav-list{
+    display:none;
+  }
+
+  /* When .nav has .open class (toggled with JS),
+     show links as a dropdown menu */
+  .nav.open .nav-list{
+    display:flex;
+    position:absolute;
+    left:0;
+    right:0;
+    top:60px;
+    flex-direction:column;
+    background:var(--bg-alt);
+    padding:1rem;
+    border-bottom:var(--border);
+  }
 }
 
-/* Hero */
-.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;padding:3.5rem 0}
-.hero h1{font-size:clamp(1.9rem,2.2rem + 1.1vw,3rem);line-height:1.1;margin:0 0 .8rem}
-.sub{color:var(--muted);font-size:1.1rem}
-.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.2rem}
-.btn{display:inline-flex;align-items:center;gap:.45rem;border:var(--border);padding:.7rem 1rem;border-radius:.8rem;background:transparent;color:var(--text);text-decoration:none;box-shadow:var(--shadow);transition:transform .12s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018;border-color:transparent}
+/* =========================================
+   HERO SECTION
+   (Intro text + avatar image)
+   ========================================= */
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr .8fr; /* text wider than image */
+  gap:2rem;
+  align-items:center;
+  padding:3.5rem 0;
+}
 
-/* Avatar */
-.avatar{position:relative;display:block;max-width:360px;margin-left:auto;border-radius:24px;overflow:hidden;border:var(--border);box-shadow:var(--shadow);background:var(--card)}
-.avatar img{display:block;width:100%;height:auto}
+.hero h1{
+  font-size:clamp(1.9rem,2.2rem + 1.1vw,3rem); /* responsive font size */
+  line-height:1.1;
+  margin:0 0 .8rem;
+}
 
+/* Sub-header text under hero title */
+.sub{
+  color:var(--muted);
+  font-size:1.1rem;
+}
+
+/* Row of call-to-action buttons */
+.cta-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.8rem;
+  margin-top:1.2rem;
+}
+
+/* Generic button styles */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  border:var(--border);
+  padding:.7rem 1rem;
+  border-radius:.8rem;
+  background:transparent;
+  color:var(--text);
+  text-decoration:none;
+  box-shadow:var(--shadow);
+  transition:transform .12s ease;
+}
+
+/* Slight lift on hover */
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+/* Primary button with gradient background */
+.btn.primary{
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:#001018;
+  border-color:transparent;
+}
+
+/* =========================================
+   AVATAR IMAGE
+   ========================================= */
+.avatar{
+  position:relative;
+  display:block;
+  max-width:360px;
+  margin-left:auto;
+  border-radius:24px;
+  overflow:hidden;
+  border:var(--border);
+  box-shadow:var(--shadow);
+  background:var(--card);
+}
+
+.avatar img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* Stack hero vertically on smaller screens */
 @media (max-width:900px){
-  .hero{grid-template-columns:1fr}
-  .avatar{order:-1;max-width:240px;margin:0 auto 1rem}
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  /* Move avatar above text and reduce size */
+  .avatar{
+    order:-1;
+    max-width:240px;
+    margin:0 auto 1rem;
+  }
 }
 
-/* Sections */
-.section{padding:3rem 0}
-.section.alt{background:var(--bg-alt)}
-h2{font-size:1.6rem;margin:0 0 1rem}
-h3{margin:.6rem 0}
-.grid-2{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem}
-@media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+/* =========================================
+   SECTIONS & LAYOUT UTILITIES
+   ========================================= */
 
-/* Cards */
-.card{background:var(--card);border:var(--border);border-radius:16px;padding:1rem 1.2rem;box-shadow:var(--shadow)}
-.card-cta{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
-.bullets{padding-left:1.1rem;margin:.5rem 0}
+/* Section padding */
+.section{
+  padding:3rem 0;
+}
 
-/* Tags */
-.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0 0}
-.tag{display:inline-block;background:linear-gradient(135deg, rgba(102,227,255,.12), rgba(138,125,255,.14));border:var(--border);padding:.3rem .6rem;border-radius:999px;color:var(--text)}
-.hint{color:var(--muted);margin-top:.6rem}
+/* Alternate background color for visual separation */
+.section.alt{
+  background:var(--bg-alt);
+}
 
-/* Projects grid */
-.cards{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
-.cards .card{grid-column:span 6}
-@media (max-width:900px){.cards .card{grid-column:span 12}}
+/* Section headings */
+h2{
+  font-size:1.6rem;
+  margin:0 0 1rem;
+}
 
-/* Timeline */
-.timeline{list-style:none;margin:0;padding:0}
-.timeline li{position:relative;padding-left:1.2rem;margin:.9rem 0}
-.timeline li::before{content:"";position:absolute;left:0;top:.45rem;width:.5rem;height:.5rem;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
-.muted{color:var(--muted)}
+h3{
+  margin:.6rem 0;
+}
 
-/* Contact */
-.links{display:flex;gap:.8rem;flex-wrap:wrap;padding:0;margin:.8rem 0 0;list-style:none}
+/* Two-column grid helper */
+.grid-2{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:2rem;
+}
 
-/* Footer */
-.site-footer{border-top:var(--border);padding:1.2rem 0;color:var(--muted);text-align:center}
+/* Stack columns on small screens */
+@media (max-width:900px){
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+}
 
-/* Focus rings */
-:focus-visible{outline:2px solid var(--ring);outline-offset:3px;border-radius:8px}
+/* =========================================
+   CARDS
+   Used for about, projects, etc.
+   ========================================= */
+.card{
+  background:var(--card);
+  border:var(--border);
+  border-radius:16px;
+  padding:1rem 1.2rem;
+  box-shadow:var(--shadow);
+}
 
-/* Responsive video */
-.video-wrap{position:relative;width:100%;max-width:900px;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:var(--border);box-shadow:var(--shadow);background:#000}
-.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* Button row inside cards */
+.card-cta{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin-top:.8rem;
+}
+
+/* Bullet list inside cards */
+.bullets{
+  padding-left:1.1rem;
+  margin:.5rem 0;
+}
+
+/* =========================================
+   TAGS (Skills chips)
+   ========================================= */
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin:.8rem 0 0;
+}
+
+/* Individual tag style */
+.tag{
+  display:inline-block;
+  background:linear-gradient(
+    135deg,
+    rgba(102,227,255,.12),
+    rgba(138,125,255,.14)
+  );
+  border:var(--border);
+  padding:.3rem .6rem;
+  border-radius:999px; /* pill shape */
+  color:var(--text);
+}
+
+/* Hint / helper text */
+.hint{
+  color:var(--muted);
+  margin-top:.6rem;
+}
+
+/* =========================================
+   PROJECT CARDS GRID
+   ========================================= */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(12,1fr); /* 12-column grid */
+  gap:1rem;
+}
+
+/* Each card spans 6 columns (2 per row on desktop) */
+.cards .card{
+  grid-column:span 6;
+}
+
+/* On small screens, cards take full width */
+@media (max-width:900px){
+  .cards .card{
+    grid-column:span 12;
+  }
+}
+
+/* =========================================
+   TIMELINE (Experience section)
+   ========================================= */
+.timeline{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.timeline li{
+  position:relative;
+  padding-left:1.2rem; /* space for bullet dot */
+  margin:.9rem 0;
+}
+
+/* Colored dot before each timeline entry */
+.timeline li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.45rem;
+  width:.5rem;
+  height:.5rem;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+}
+
+/* Muted text styling (dates, etc.) */
+.muted{
+  color:var(--muted);
+}
+
+/* =========================================
+   CONTACT LINKS
+   ========================================= */
+.links{
+  display:flex;
+  gap:.8rem;
+  flex-wrap:wrap;
+  padding:0;
+  margin:.8rem 0 0;
+  list-style:none;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.site-footer{
+  border-top:var(--border);
+  padding:1.2rem 0;
+  color:var(--muted);
+  text-align:center;
+}
+
+/* =========================================
+   GLOBAL FOCUS RINGS
+   Improve accessibility for keyboard users
+   ========================================= */
+:focus-visible{
+  outline:2px solid var(--ring);
+  outline-offset:3px;
+  border-radius:8px;
+}
+
+/* =========================================
+   RESPONSIVE VIDEO WRAPPER
+   Keeps YouTube embed at 16:9 aspect ratio
+   ========================================= */
+.video-wrap{
+  position:relative;
+  width:100%;
+  max-width:900px;
+  aspect-ratio:16/9;          /* modern way to keep 16:9 */
+  border-radius:16px;
+  overflow:hidden;
+  border:var(--border);
+  box-shadow:var(--shadow);
+  background:#000;
+}
+
+/* Make iframe fill the wrapper */
+.video-wrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}

@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup / charset -->
   <meta charset="UTF-8" />
+  <!-- Makes layout responsive on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Isra | CPA → Aspiring Software Engineer</title>
 
+  <!-- Short description for search engines and social previews -->
   <meta name="description" content="Isra — CPA with 9 years in tax, learning software engineering. Building FinTech tools: tax calculators, dashboards, client portals.">
+  <!-- Support light and dark color schemes -->
   <meta name="color-scheme" content="dark light">
+  <!-- Browser theme color for dark mode -->
   <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <!-- Browser theme color for light mode -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 
+  <!-- Canonical URL (SEO best practice) -->
   <link rel="canonical" href="https://heyitsmeisra.github.io/professional-portfolio/">
+  <!-- Favicon for browser tab -->
   <link rel="icon" href="/favicon.ico" sizes="any">
 
-  <!-- Fonts -->
+  <!-- Google Fonts: Inter family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- Main CSS file for styling -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <!-- Skip link for screen readers / keyboard users -->
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Site header with navigation and hero section -->
   <header class="site-header" role="banner">
     <div class="container">
+      <!-- Primary navigation -->
       <nav class="nav" aria-label="Primary" id="nav">
+        <!-- Brand / name -->
         <a class="brand" href="#">Israel Quimio Villa Jr</a>
-        <button class="menu-btn" aria-expanded="false" aria-controls="nav-list" id="menuBtn" aria-label="Toggle menu">Menu</button>
+
+        <!-- Mobile menu button (toggled with JS below) -->
+        <button
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="nav-list"
+          id="menuBtn"
+          aria-label="Toggle menu"
+        >
+          Menu
+        </button>
+
+        <!-- Navigation links -->
         <ul class="nav-list" id="nav-list" role="list">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -39,14 +63,20 @@
         </ul>
       </nav>
 
+      <!-- Hero / intro section at the top of the page -->
       <section class="hero" aria-labelledby="intro-title">
         <div>
+          <!-- Main headline -->
           <h1 id="intro-title">Hi, I’m Isra - CPA learning Software Engineering</h1>
+
+          <!-- Short intro / summary -->
           <p class="sub">
             9 years in tax compliance & reporting. Now building web tools that make
             <strong>compliance simpler</strong>, <strong>reporting clearer</strong>, and
             <strong>decisions faster</strong>.
           </p>
+
+          <!-- Call-to-action buttons -->
           <div class="cta-row">
             <a class="btn primary" href="#projects">See Projects</a>
             <a class="btn" href="#journey">Watch my story</a>
@@ -55,20 +85,23 @@
           </div>
         </div>
 
-        <!-- 👇 Use the EXACT file name and folder. If your file is image.jpg in the root, keep src="image.jpg". -->
+        <!-- Avatar / profile image -->
         <figure class="avatar">
           <img
             src="israel.JPG"
             alt="Isra smiling"
             width="360" height="360"
-            loading="eager" decoding="async"
+            loading="eager"
+            decoding="async"
           />
         </figure>
       </section>
     </div>
   </header>
 
+  <!-- Main content of the page -->
   <main id="main">
+    <!-- About section -->
     <section id="about" class="section">
       <div class="container grid-2">
         <div>
@@ -77,6 +110,7 @@
           <p>I’m currently in a professional coding bootcamp, learning <strong>Git, HTML, CSS, and JavaScript</strong>. My goal is to combine deep finance &amp; tax knowledge with modern software practices to build <strong>FinTech solutions</strong> that reduce manual work and improve decision-making.</p>
         </div>
 
+        <!-- Cards summarizing what you're building and what you bring -->
         <div class="about-cards">
           <div class="card">
             <h3>What I’m Building</h3>
@@ -99,25 +133,32 @@
       </div>
     </section>
 
+    <!-- Journey / video section -->
     <section id="journey" class="section alt">
       <div class="container">
         <h2>My Journey: CPA → Software Engineering</h2>
+        <!-- Short explanation of the video -->
         <p class="hint">A short video on why I’m learning to code, what I’m building, and how I plan to bridge tax and technology.</p>
+
+        <!-- Embedded YouTube video -->
         <div class="video-wrap" aria-label="YouTube video player">
           <iframe
             width="1296" height="729"
             src="https://www.youtube.com/embed/vBrprhUfYvI"
             title="Learning Software Engineering While Working Full-Time in Tax"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
           </iframe>
         </div>
       </div>
     </section>
 
+    <!-- Skills / tags section -->
     <section id="skills" class="section alt">
       <div class="container">
         <h2>Skills</h2>
+        <!-- Skill tags as a list of badges -->
         <div class="tags" role="list">
           <span class="tag" role="listitem">HTML</span>
           <span class="tag" role="listitem">CSS</span>
@@ -127,15 +168,19 @@
           <span class="tag" role="listitem">Tax Compliance</span>
           <span class="tag" role="listitem">Data Analysis</span>
         </div>
+        <!-- Note about current learning path -->
         <p class="hint">Currently focused on HTML → CSS → JavaScript. Next up: Node.js & databases.</p>
       </div>
     </section>
 
+    <!-- Projects section -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects in Progress</h2>
 
+        <!-- Grid of project cards -->
         <div class="cards">
+          <!-- Project 1: Tax form -->
           <article class="card">
             <h3>Simple Tax Form (HTML Only)</h3>
             <p>Basic HTML-only tax form to collect taxpayer information, income, filing status, and consent. Semantic and accessible.</p>
@@ -150,6 +195,7 @@
             </div>
           </article>
 
+          <!-- Project 2: Tax calculator (planned/partially built) -->
           <article class="card">
             <h3>Simple Tax Calculator</h3>
             <p>HTML/CSS/JS app to calculate estimated tax with bracket-by-bracket explanations and effective rate.</p>
@@ -159,11 +205,13 @@
               <li>Stretch: save scenarios to compare</li>
             </ul>
             <div class="card-cta">
+              <!-- Disabled button for future live link -->
               <span class="btn small" aria-disabled="true" title="Under construction">Live soon</span>
               <a class="btn small" href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">Repo →</a>
             </div>
           </article>
 
+          <!-- Project 3: Financial dashboard -->
           <article class="card">
             <h3>Financial Dashboard</h3>
             <p>Prototype dashboard showing core metrics (revenue trend, expense ratio, cash position) with mock data.</p>
@@ -177,6 +225,7 @@
             </div>
           </article>
 
+          <!-- Project 4: Client portal concept -->
           <article class="card">
             <h3>Client Portal Prototype</h3>
             <p>Concept UI for secure document intake, status tracking, and messaging for tax engagements.</p>
@@ -194,9 +243,11 @@
       </div>
     </section>
 
+    <!-- Experience / timeline section -->
     <section id="experience" class="section alt">
       <div class="container">
         <h2>Experience Highlights</h2>
+        <!-- Simple vertical timeline -->
         <ul class="timeline">
           <li>
             <strong>CPA - Corporate Tax</strong>
@@ -211,29 +262,44 @@
       </div>
     </section>
 
+    <!-- Contact section -->
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
+        <!-- Main contact method -->
         <p>Best way to reach me: <a href="mailto:isravillajr94@gmail.com">isravillajr94@gmail.com</a></p>
+
+        <!-- Social links -->
         <ul class="links" role="list">
           <li><a href="https://github.com/HeyItsMeIsra" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/israelvilla/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
+
+        <!-- Small note encouraging contact -->
         <p class="hint">Let’s connect on LinkedIn or email me — always happy to chat about tax, finance, and tech.</p>
       </div>
     </section>
   </main>
 
+  <!-- Footer with dynamic year and back to top link -->
   <footer class="site-footer" role="contentinfo">
-    <div class="container">© <span id="year"></span> Isra. CPA who speaks API. · <a href="#top">Back to top</a></div>
+    <div class="container">
+      © <span id="year"></span> Isra. CPA who speaks API. · <a href="#top">Back to top</a>
+    </div>
   </footer>
 
+  <!-- Small script for current year + mobile nav toggle -->
   <script>
+    // Set footer year to current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile navigation toggle
     const nav = document.getElementById('nav');
     const btn = document.getElementById('menuBtn');
+
     btn?.addEventListener('click', () => {
       const open = nav.classList.toggle('open');
+      // Update aria-expanded for accessibility
       btn.setAttribute('aria-expanded', String(open));
     });
   </script>
