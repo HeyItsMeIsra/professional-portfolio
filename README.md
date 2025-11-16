@@ -1,49 +1,94 @@
-# 🌐 Professional Portfolio — Israel Q. Villa Jr.
+# 🌐 **Professional Portfolio — Israel Q. Villa Jr.**
 
-Welcome to my personal portfolio — a space where I share my journey from **Certified Public Accountant (CPA)** to **Software Engineering**.
+Welcome to my personal portfolio repository!  
+I’m **Israel Villa**, a **Certified Public Accountant (CPA)** transitioning into **Software Engineering** after nearly a decade working in:
 
-After nearly a decade in corporate tax and financial reporting across the Philippines, Qatar, Australia, and the U.S., I began learning how technology can make compliance and data workflows more efficient.  
-This portfolio highlights my background, projects, and continuous learning as I build tools that bridge **finance and technology**.
+- Corporate tax  
+- Financial reporting  
+- Tax compliance  
+- Audit support  
+- Multinational finance teams across the Philippines 🇵🇭, Qatar 🇶🇦, Australia 🇦🇺, and the United States 🇺🇸  
+
+This portfolio represents how I am bridging **Finance + Technology** by building tools that make tax workflows cleaner, faster, and more automated.
 
 ---
 
-## 🔴 Live Portfolio  
-**🌍 Live Website:** [https://heyitsmeisra.github.io/professional-portfolio/](https://heyitsmeisra.github.io/professional-portfolio/)
+## 🚀 **Live Portfolio Website**
 
-🎥 **Watch My Story:**  
+👉 **Visit here:**  
+🔗 **https://heyitsmeisra.github.io/professional-portfolio/**
+
+---
+
+## 🎥 **My Story (2.5-minute video)**
+
 [![Watch on YouTube](https://img.youtube.com/vi/vBrprhUfYvI/0.jpg)](https://www.youtube.com/watch?v=vBrprhUfYvI)
 
-> *A 2.5-minute video sharing how I balance full-time work in tax while studying software engineering, and how I’m combining both worlds.*
+> *How I balance full-time tax work while studying software engineering, and why I’m building tools for tax professionals.*
 
 ---
 
-## 💡 What You’ll Find Here  
-- Hero section with a personal introduction  
-- About Me — 9 years of corporate tax experience → learning to code  
-- Skills section (Finance 💼 + Tech 💻)  
-- Projects — live & in progress  
-- Experience timeline  
-- Contact + social links  
-- Embedded YouTube video  
+## 🖼️ **Project Screenshot**
+
+> *(Replace this with a real screenshot later)*
+
+![Portfolio Screenshot Placeholder](https://via.placeholder.com/1000x600?text=Portfolio+Screenshot)
 
 ---
 
-## 🧩 Tech Stack
+## 🧩 **What This Portfolio Includes**
 
-| Technology | Purpose |
-|-------------|----------|
-| **HTML5**    | Page structure and content |
-| **CSS3**     | Styling and responsive layout |
-| **Git & GitHub** | Version control and deployment |
-| **JavaScript** | Adding interactivity (in progress) |
-
----
-
-## ✉️ Connect
-
-📫 **LinkedIn:** [https://www.linkedin.com/in/israelvilla](https://www.linkedin.com/in/israelvilla)  
-💻 **GitHub:** [https://github.com/HeyItsMeIsra](https://github.com/HeyItsMeIsra)  
+✔️ Personal introduction  
+✔️ Career summary & experience timeline  
+✔️ Finance + Tech skillset  
+✔️ Featured projects  
+✔️ Contact & social links  
+✔️ Embedded YouTube video  
+✔️ Responsive layout  
+✔️ Actively updated (learning in public)  
 
 ---
 
-⭐ *Thanks for visiting my portfolio! Feel free to connect or share feedback as I continue learning and building.*  
+## 💼 **Finance Skills**
+
+| Area | Skills |
+|------|--------|
+| **Corporate Tax** | Workpapers, adjustments, NOL, taxable income builds |
+| **Compliance** | Federal & State filings, tax packages, provisions |
+| **Accounting** | Trial balance mapping, journals, year-end close |
+| **Tools** | CCH ProSystem, QuickBooks, Xero, Excel modeling |
+| **Audit Support** | Schedules, variance analysis, documentation |
+
+---
+
+## 💻 **Tech Stack (Current & Learning)**
+
+| Technology | Level | Notes |
+|------------|--------|--------|
+| **HTML5** | ⭐⭐⭐⭐ | Structure & semantic layout |
+| **CSS3** | ⭐⭐⭐ | Styling & responsive design |
+| **JavaScript** | ⭐⭐ | Adding interactivity |
+| **Git & GitHub** | ⭐⭐⭐ | Version control & deployment |
+| **GitHub Pages** | ⭐⭐⭐ | Hosting this portfolio |
+| **Python** | ⭐ | Automation coming soon |
+| **Excel Automation** | ⭐⭐⭐⭐ | Building tax tools |
+
+---
+
+## 🦖 **Featured Project — T-REX (Tax Reconciliation & Export)**
+
+My first end-to-end tax automation tool built while learning software development.
+
+📌 **Versions:**
+- **v0.1** Excel prototype  
+- **v0.2** HTML/CSS form  
+- **v0.3** JavaScript calculator  
+- **Next:** Interactive web app + integrations  
+
+Repository: *(coming soon)*  
+Video introduction: *(coming soon)*  
+
+---
+
+## 🗂️ **Repository Structure**
+

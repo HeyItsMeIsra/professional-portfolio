@@ -72,8 +72,13 @@ a:hover{
 
 /* Page content container: max width + centered */
 .container{
-  width:min(1100px,92%);    /* up to 1100px, otherwise 92% of viewport */
+  width:min(1100px,92%);
   margin-inline:auto;
+}
+
+/* Headings spacing */
+h1,h2,h3{
+  font-weight:600;
 }
 
 /* =========================================
@@ -172,6 +177,7 @@ a:hover{
     border-radius:.6rem;
     background:transparent;
     color:var(--text);
+    cursor:pointer;
   }
 
   /* Hide nav links by default on mobile */
@@ -207,7 +213,7 @@ a:hover{
 }
 
 .hero h1{
-  font-size:clamp(1.9rem,2.2rem + 1.1vw,3rem); /* responsive font size */
+  font-size:clamp(1.9rem,2.2rem + 1.1vw,3rem);
   line-height:1.1;
   margin:0 0 .8rem;
 }
@@ -230,6 +236,7 @@ a:hover{
 .btn{
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   gap:.45rem;
   border:var(--border);
   padding:.7rem 1rem;
@@ -238,12 +245,28 @@ a:hover{
   color:var(--text);
   text-decoration:none;
   box-shadow:var(--shadow);
-  transition:transform .12s ease;
+  font-size:.95rem;
+  cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+
+/* Smaller variant for card buttons */
+.btn.small{
+  padding:.45rem .8rem;
+  font-size:.85rem;
+  box-shadow:none;
 }
 
 /* Slight lift on hover */
 .btn:hover{
   transform:translateY(-1px);
+}
+
+/* Disabled-looking button for aria-disabled */
+.btn[aria-disabled="true"]{
+  opacity:.6;
+  cursor:not-allowed;
+  box-shadow:none;
 }
 
 /* Primary button with gradient background */
@@ -310,6 +333,7 @@ h2{
 
 h3{
   margin:.6rem 0;
+  font-size:1.15rem;
 }
 
 /* Two-column grid helper */
@@ -336,6 +360,12 @@ h3{
   border-radius:16px;
   padding:1rem 1.2rem;
   box-shadow:var(--shadow);
+}
+
+/* Container for about cards */
+.about-cards{
+  display:grid;
+  gap:1rem;
 }
 
 /* Button row inside cards */
@@ -380,6 +410,7 @@ h3{
 .hint{
   color:var(--muted);
   margin-top:.6rem;
+  max-width:48rem;
 }
 
 /* =========================================
@@ -433,6 +464,9 @@ h3{
 /* Muted text styling (dates, etc.) */
 .muted{
   color:var(--muted);
+  display:inline-block;
+  margin-left:.4rem;
+  font-size:.9rem;
 }
 
 /* =========================================
@@ -455,6 +489,7 @@ h3{
   padding:1.2rem 0;
   color:var(--muted);
   text-align:center;
+  font-size:.9rem;
 }
 
 /* =========================================
@@ -481,6 +516,7 @@ h3{
   border:var(--border);
   box-shadow:var(--shadow);
   background:#000;
+  margin-top:1rem;
 }
 
 /* Make iframe fill the wrapper */
